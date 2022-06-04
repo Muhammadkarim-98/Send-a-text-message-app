@@ -1,0 +1,21 @@
+doctype html 
+html 
+  head 
+    meta( charset="utf-8")
+    title #{title}
+    link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous")
+    link(rel="icon" type="image/x-icon" href="/images/favicon.ico")
+  body(style="background: linear-gradient(90deg, #5d54a4, #7c78b8)")
+    block content
+      .container(style="display: row; align-items: center; justify-content: center; margin-top: 23%")
+        .box
+          h1(style="color: #FFC300") Send a text message via (Vonage)
+          br
+          form(action="justSent" method="POST")
+            .form-row 
+              .col 
+                input.form-control(type="tel" name="number" placeholder="Your number")
+              .col()
+                input.form-control(type="textarea" name="text" placeholder="Your Message")
+              button.btn.btn-success(type="submit" style="font-weight: 700; padding: 0 40px" ) Send
+                          h3(style="position: absolute; top: 92%; left: 72%; right: 0; bottom: 0; display: inline-block; color: black") Created By uzbekDev98  
