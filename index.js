@@ -18,8 +18,8 @@ app.get("/", (req, res) => {
 // "SENT" ROUTE
 app.post("/justSent", (req, res) => {
     const vonage = new Vonage({
-        apiKey: "b6a54c18",
-        apiSecret: "2rHdtJqqdqYrK5MB",
+        apiKey: "YOUR VONAGE ACCOUNT APIKEY",
+        apiSecret: "YOUR VONAGE ACCOUNT APISECRET",
     });
     /////
     const phoneNumber = req.body.number;
